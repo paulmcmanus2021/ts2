@@ -1,17 +1,68 @@
-.App {
+.home-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tops-container {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#banner {
+  width:1284px;
+  height:400px;
+  margin: 0px 0px 0px 0px;
 }
+
+.brand-grid {
+  max-width: 1288px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+/* First row */
+#makita {
+  margin: 2px 1px 1px 0px;
+}
+
+#dewalt {
+  margin: 2px 1px 1px 1px;
+}
+
+#hikoki {
+  margin: 2px 1px 1px 1px;
+}
+
+#bosch {
+  margin: 2px 0px 1px 1px;
+}
+
+/* Second row */
+#bahco {
+  margin: 0px 1px 0px 0px;
+}
+
+#metabo {
+  margin: 0px 1px 0px 1px;
+}
+
+#stanley {
+  margin: 0px 1px 0px 1px;
+}
+
+#evolution {
+  margin: 0px 0px 0px 1px;
+}
+
+
+
+
+
+
 
 .App-header {
   background-color: #282c34;
@@ -26,13 +77,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
