@@ -22,11 +22,6 @@ const BrandsContainer = props => (
       <Link to="/metabotop20"><Metabo /></Link>
       <Link to="/stanleytop20"><Stanley /></Link>
       <Link to="/evolutiontop20"><Evolution /></Link>
-
-      <Switch>
-
-
-       </Switch>
     </Router >
     </div>
   </Fragment>
