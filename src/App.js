@@ -14,8 +14,7 @@ class App extends Component {
           <Header />
             <Switch>
               <Route exact path="/" component={HomeContainer}></Route>
-              <Route path="/top40sellers" component={Top40Container}></Route>
-              <Route path="" component={HomeContainer}></Route>
+              <Route path="/top40sellers/" component={Top40Container}></Route>
             </Switch>
           <Footer />
         </Fragment>

@@ -95,3 +95,15 @@
 .App-link {
   color: #61dafb;
 }
+
+.pagination {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.page-link {
+  color: black;
+}
