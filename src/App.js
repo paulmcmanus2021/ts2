@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomeContainer from './containers/HomeContainer';
 import Top40Container from './containers/Top40Container';
+import ProductPageContainer from './containers/ProductPageContainer';
 import Top20Container from './containers/Top20Container';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ class App extends Component {
           <Header />
             <Switch>
               <Route exact path="/" component={HomeContainer}></Route>
+              <Route exact path="/product/:id" component={ProductPageContainer}></Route>
               <Route exact path="/top40sellers/" component={Top40Container}></Route>
               <Route path="/top20/:brand" component={Top20Container}></Route>
               <Route path="" component={HomeContainer}></Route>

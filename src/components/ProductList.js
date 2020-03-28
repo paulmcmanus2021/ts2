@@ -5,7 +5,17 @@ function ProductList(props){
 
   const productList = props.products.map((product, index) => {
     return (
-      <ProductItem key={index} name={product.name} price={product.price} position={index+1} ></ProductItem>
+      <ProductItem
+        key={index}
+        id={product.id}
+        name={product.name}
+        price={product.price}
+        position={index+1}
+        description={product.description}
+        sku={product.sku}
+        images={product.images}
+        >
+      </ProductItem>
     )
   })
 
