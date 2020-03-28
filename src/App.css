@@ -66,11 +66,11 @@
   margin: 0px 0px 0px 1px;
 }
 
-.top-40-page {
+.top-40-page, .top-20-page {
   background-color: lightgrey;
 }
 
-.top-40-title {
+.top-40-title, .top-20-title {
   text-decoration: underline;
   display: flex;
   justify-content: center;
