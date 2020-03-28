@@ -7,21 +7,21 @@ import Hikoki from '../components/BrandLinks/Hikoki';
 import Makita from '../components/BrandLinks/Makita';
 import Metabo from '../components/BrandLinks/Metabo';
 import Stanley from '../components/BrandLinks/Stanley';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 
 const BrandsContainer = props => (
   <Fragment>
     <div className="brand-grid">
     <Router>
-      <Link to="/makitatop20"><Makita /></Link>
-      <Link to="/dewalttop20"><Dewalt /></Link>
-      <Link to="/hikokitop20"><Hikoki /></Link>
-      <Link to="/boschtop20"><Bosch /></Link>
-      <Link to="/bahcotop20"><Bahco /></Link>
-      <Link to="/metabotop20"><Metabo /></Link>
-      <Link to="/stanleytop20"><Stanley /></Link>
-      <Link to="/evolutiontop20"><Evolution /></Link>
+      <a href="/makitatop20"><Makita /></a>
+      <a href="/dewalttop20"><Dewalt /></a>
+      <a href="/hikokitop20"><Hikoki /></a>
+      <a href="/boschtop20"><Bosch /></a>
+      <a href="/bahcotop20"><Bahco /></a>
+      <a href="/metabotop20"><Metabo /></a>
+      <a href="/stanleytop20"><Stanley /></a>
+      <a href="/evolutiontop20"><Evolution /></a>
     </Router >
     </div>
   </Fragment>

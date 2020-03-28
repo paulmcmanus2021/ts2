@@ -66,11 +66,20 @@
   margin: 0px 0px 0px 1px;
 }
 
+.top-40-page {
+  background-color: lightgrey;
+}
 
+.top-40-title {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
 
-
-
-
+#header-home{
+  font-size: 30px;
+}
 
 .App-header {
   background-color: #282c34;
