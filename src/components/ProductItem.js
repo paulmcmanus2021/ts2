@@ -2,9 +2,9 @@ import React from 'react'
 
 function ProductItem(props) {
   return(
-    <div className="product-link">
+    <div>
       <a href="/product/:id" >
-        <h1>{props.position}. {props.name} - £{props.price.toFixed(2)}</h1>
+        <h1 class="product-link">{props.position}. {props.name} - £{props.price.toFixed(2)}</h1>
       </a>
     </div>
   )

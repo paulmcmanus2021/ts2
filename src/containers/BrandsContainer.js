@@ -14,14 +14,14 @@ const BrandsContainer = props => (
   <Fragment>
     <div className="brand-grid">
     <Router>
-      <a href="/top20/makita"><Makita /></a>
-      <a href="/top20/dewalt"><Dewalt /></a>
-      <a href="/top20/hikoki"><Hikoki /></a>
-      <a href="/top20/bosch"><Bosch /></a>
-      <a href="/top20/bahco"><Bahco /></a>
-      <a href="/top20/metabo"><Metabo /></a>
-      <a href="/top20/stanley"><Stanley /></a>
-      <a href="/top20/evolution"><Evolution /></a>
+      <a href="/topsellers/makita"><Makita /></a>
+      <a href="/topsellers/dewalt"><Dewalt /></a>
+      <a href="/topsellers/hikoki"><Hikoki /></a>
+      <a href="/topsellers/bosch"><Bosch /></a>
+      <a href="/topsellers/bahco"><Bahco /></a>
+      <a href="/topsellers/metabo"><Metabo /></a>
+      <a href="/topsellers/stanley"><Stanley /></a>
+      <a href="/topsellers/evolution"><Evolution /></a>
     </Router >
     </div>
   </Fragment>

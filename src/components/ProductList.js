@@ -21,7 +21,9 @@ function ProductList(props){
 
   return(
     <Fragment>
-      {productList}
+      <div className="product-list">
+        {productList}
+      </div>
     </Fragment>
 
   )

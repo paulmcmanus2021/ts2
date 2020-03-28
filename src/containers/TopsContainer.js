@@ -10,7 +10,7 @@ function TopsContainer(props){
     <div className="tops-container">
       <Router>
         <h1>Top 40</h1>
-        <a href="/top40sellers"><Top40Banner /></a>
+        <a href="/topsellers"><Top40Banner /></a>
         <BrandsContainer />
       </Router>
     </div>

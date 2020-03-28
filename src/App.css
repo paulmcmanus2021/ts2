@@ -66,15 +66,19 @@
   margin: 0px 0px 0px 1px;
 }
 
-.top-40-page, .top-20-page {
+.top-sellers-page {
   background-color: lightgrey;
 }
 
-.top-40-title, .top-20-title {
+.top-sellers-title {
   text-decoration: underline;
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+}
+
+.product-link {
+  color: black;
 }
 
 #header-home{
