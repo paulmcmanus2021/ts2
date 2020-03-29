@@ -6,8 +6,8 @@ import Description from '../components/ProductPageComponents/Description';
 import OtherTop40 from '../components/ProductPageComponents/OtherTop40';
 
 
-function ProductPageContainer(props){
 
+function ProductPageContainer(props){
   return(
     <div className="product-page-container">
       <Picture />
@@ -15,7 +15,6 @@ function ProductPageContainer(props){
       <OtherTop40 />
     </div>
     )
-
 }
 
 export default ProductPageContainer;

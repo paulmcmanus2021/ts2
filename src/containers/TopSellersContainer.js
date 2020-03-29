@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import ProductList from '../components/ProductList';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, useRouteMatch } from "react-router-dom";
 import ProductPageContainer from "./ProductPageContainer";
 
 
@@ -47,16 +47,16 @@ class TopSellersContainer extends Component {
         <Fragment>
           <Switch>
 
-            <Route path="/topsellers/">
-              <div className="top-sellers-page">
-                <h1 className="top-sellers-title">Top Sellers</h1>
-                  <ProductList products={this.state.products} />
-              </div>
-            </Route>
-
             <Route path="/product/:id">
               <div className="one-product">
                 <ProductPageContainer products={this.state.products} />
+              </div>
+            </Route>
+
+            <Route path="/">
+              <div className="top-sellers-page">
+                <h1 className="top-sellers-title">Top Sellers</h1>
+                  <ProductList products={this.state.products} />
               </div>
             </Route>
 

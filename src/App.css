@@ -1,5 +1,17 @@
-.header, .footer, .home-container {
+.footer, .home-container {
   text-align: center;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ts-logo {
+  min-height: 150px;
 }
 
 .tops-container, .product-page-container {
