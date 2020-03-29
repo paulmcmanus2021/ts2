@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import ProductList from '../components/ProductList';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ProductPageContainer from "./ProductPageContainer";
+
 
 class TopSellersContainer extends Component {
   constructor(props){
@@ -40,14 +43,26 @@ class TopSellersContainer extends Component {
 
 
       return(
+      <Router>
         <Fragment>
-          <div className="top-sellers-page">
-            <h1 className="top-sellers-title">Top Sellers</h1>
-            <section className="product-list">
-              <ProductList products={this.state.products} />
-           </section>
-          </div>
+          <Switch>
+
+            <Route path="/topsellers/">
+              <div className="top-sellers-page">
+                <h1 className="top-sellers-title">Top Sellers</h1>
+                  <ProductList products={this.state.products} />
+              </div>
+            </Route>
+
+            <Route path="/product/:id">
+              <div className="one-product">
+                <ProductPageContainer products={this.state.products} />
+              </div>
+            </Route>
+
+          </Switch>
         </Fragment>
+      </Router>
       )
     }
   }

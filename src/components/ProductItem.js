@@ -1,13 +1,23 @@
 import React from 'react'
+import ProductPageContainer from '../containers/ProductPageContainer';
 
 function ProductItem(props) {
+  function handleClick(e){
+    let baseUrl="/topsellers/product/";
+    let productId=props.id;
+    window.location=(baseUrl + productId);
+  }
+
+
+
   return(
     <div>
-      <a href="/topsellers/product/:id(testtext)">
-        <h1 className="product-link">{props.position}. {props.name} - £{props.price.toFixed(2)}</h1>
+      <a className="product-link" onClick={handleClick}>
+        {props.position}. {props.name} - £{props.price.toFixed(2)}
       </a>
     </div>
   )
+
 }
 
 export default ProductItem;

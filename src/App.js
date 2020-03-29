@@ -15,10 +15,11 @@ class App extends Component {
           <Header />
             <Switch>
               <Route exact path="/" component={HomeContainer}></Route>
-              <Route exact path="/topsellers/product/:id" component={ProductPageContainer}></Route>
+
               <Route exact path="/topsellers" component={TopSellersContainer}></Route>
-              <Route path="/topsellers/:brand" component={TopSellersContainer}></Route>
+              <Route exact path="/topsellers/:brand" component={TopSellersContainer}></Route>
               <Route path="" component={HomeContainer}></Route>
+              
             </Switch>
           <Footer />
         </Fragment>

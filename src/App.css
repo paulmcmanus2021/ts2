@@ -1,16 +1,8 @@
-.header {
+.header, .footer, .home-container {
   text-align: center;
 }
 
-.footer {
-  text-align: center;
-}
-
-.home-container {
-  text-align: center;
-}
-
-.tops-container {
+.tops-container, .product-page-container {
   background-color: lightgrey;
   display: flex;
   flex-direction: column;
@@ -79,6 +71,13 @@
 
 .product-link {
   color: black;
+  font-size: 20px;
+  line-height: 3;
+  text-decoration: underline;
+}
+
+.product-link:hover {
+  cursor: pointer;
 }
 
 #header-home{
@@ -110,4 +109,10 @@
 
 .page-link  {
   color: black;
+}
+
+.product-page-component {
+  background-color: white;
+  max-width: 70%;
+  margin: 25px 0px 25px 0px;
 }
